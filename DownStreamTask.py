@@ -281,7 +281,7 @@ def output_moin(results,data,peak,filename_peak,filename_data):
 def Co_localizedIONSearching(return_feature, peak,num,output_file):
     peak = np.loadtxt(peak)
     tree = KDTree(return_feature)
-
+    num = int(num)
     columns = ['querry ion']
     for i in range(num):
         columns.append('Co-localized ion %d' % i)
